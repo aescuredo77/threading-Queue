@@ -6,7 +6,7 @@ import cv2
 get_stop = False
 show_stop = False
 
-sentinel = object()       #  se usa para salir limpiamente de los Threads
+sentinel = object()                  #Use to exit Threads cleanly
 n = 0
 
 
@@ -42,9 +42,8 @@ if __name__ == '__main__':
     Thread(target = get_video, args=(q,)).start()
     Thread(target = show_video, args=(q,)).start()
     while not show_stop and not get_stop:
-        n +=1
-        print(n)
-        time.sleep(1)
+        pass
+        #TODO                                       # add your code here
         
 
 
